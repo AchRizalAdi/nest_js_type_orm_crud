@@ -2,7 +2,8 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { ProvinceService } from './province.service';
 import { CreateProvinceDto } from './dto/create-province.dto';
 import { UpdateProvinceDto } from './dto/update-province.dto';
-
+import { ApiTags } from '@nestjs/swagger';
+@ApiTags('province')
 @Controller({
   path : 'api',
   version : '1'
